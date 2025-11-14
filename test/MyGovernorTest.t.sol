@@ -24,8 +24,8 @@ contract MyGovernorTest is Test {
     address[] targets;
 
     uint256 public constant MIN_DELAY = 1 hours;
-    uint256 public constant VOTING_DELAY = 1 days; // how many blocks till a vote is active (1 day)
-    uint256 public constant VOTING_PERIOD = 1 weeks; // how many blocks till a vote is active (1 week)
+    uint256 public constant VOTING_DELAY = 7200; // how many blocks till a vote is active (1 day)
+    uint256 public constant VOTING_PERIOD = 50400; // 1 week in blocks
 
     function setUp() public {
         govToken = new GovToken();
